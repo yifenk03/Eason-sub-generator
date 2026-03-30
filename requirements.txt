@@ -1,0 +1,30 @@
+# 字幕生成工具依赖
+# 安装命令: pip install -r requirements.txt
+
+# 核心依赖
+funasr>=1.0.0          # 阿里 FunASR 语音识别库
+torch>=2.0.0           # PyTorch 深度学习框架
+torchaudio>=2.0.0      # PyTorch 音频处理
+
+# GPU 加速（可选，如果使用 CPU 可不装）
+# 根据你的 CUDA 版本选择合适的版本
+# CUDA 11.8:
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+# CUDA 12.1:
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+# 图形界面（Python 3 内置，无需单独安装）
+# tkinter
+
+# 网络请求
+requests>=2.28.0       # LM Studio API 调用
+
+# 音频处理（FunASR 可能需要）
+soundfile>=0.12.0      # 音频文件读写
+librosa>=0.10.0        # 音频分析（可选）
+
+# Windows 音频处理
+# pip install pyaudio  # Windows 下可选
+
+# 其他工具
+numpy>=1.24.0          # 数值计算
